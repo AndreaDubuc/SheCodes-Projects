@@ -1,292 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name The Planet - Quiz</title>
-  </head>
 
-  <style>
-    body {
-      background: black;
-      margin: 0px;
-      padding: 100px;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Name The Planet - Quiz</title>
+</head>
 
-    h1 {
-      font-size: 55px;
-      font-family: "Courier New", Courier, monospace;
-      color: whitesmoke;
-      font-weight: bold;
-      text-align: center;
-      text-align: center;
-      line-height: 43px;
-      margin: 0px;
-    }
+<style>
+  body {
+    background: black;
+    margin: 0px;
+    padding: 100px;
+  }
 
-    h2 {
-      font-family: "Courier New", Courier, monospace;
-      text-align: center;
-      color: #218811;
-    }
+  h1 {
+    font-size: 55px;
+    font-family: "Courier New", Courier, monospace;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    text-align: center;
+    line-height: 43px;
+    margin: 0px;
+  }
 
-    img:hover {
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      opacity: 0.2;
-    }
+  h2 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    color: #218811;
+  }
 
-    .planet {
-      display: inline-block;
-      padding: 0px;
-    }
+  img:hover {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    opacity: 0.2;
+  }
 
-    .planet img {
-      width: 250px;
-      margin: 0;
-    }
+  .planet {
+    display: inline-block;
+    padding: 0px;
+  }
 
-    span {
-      display: block;
-      height: auto;
-      text-align: center;
-      margin: 5px;
-    }
+  .planet img {
+    width: 250px;
+    margin: 0;
+  }
 
-    p {
-      text-align: center;
-      font-family: "Courier New", Courier, monospace;
-      color: white;
-    }
+  span {
+    display: block;
+    height: auto;
+    text-align: center;
+    margin: 5px;
+  }
 
-    a:visited {
-      color: rgb(230, 163, 185);
-    }
-  </style>
+  p {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+  }
 
-  <body>
-    <h1>Name the Planet</h1>
+  a:visited {
+    color: rgb(230, 163, 185);
+  }
+</style>
 
-    <h2 id="demo"></h2>
+<body>
+  <h1>Name the Planet</h1>
 
-    <br />
-    <hr />
+  <h2 id="demo"></h2>
+
+  <br />
+  <hr />
+  <span>
     <span>
-      <span>
-        <div class="planet">
-          <img
-            id="mercury"
-            src="https://scx1.b-cdn.net/csz/news/800a/2015/whatsimporta.jpg"
-            alt="mercury"
-          />
-        </div>
-
-        <div class="planet">
-          <img
-            id="venus"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/PIA23791-Venus-NewlyProcessedView-20200608.jpg/440px-PIA23791-Venus-NewlyProcessedView-20200608.jpg"
-            alt="venus"
-          />
-        </div>
-
-        <div class="planet">
-          <img
-            id="earth"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1200px-The_Earth_seen_from_Apollo_17.jpg"
-            alt="earth"
-          />
-        </div>
-
-        <div class="planet">
-          <img
-            id="mars"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1920px-OSIRIS_Mars_true_color.jpg"
-            alt="mars"
-          />
-        </div>
-      </span>
-
-      <br />
       <div class="planet">
-        <img
-          id="jupiter"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/440px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
-          alt="jupiter"
-        />
+        <img id="mercury" src="https://scx1.b-cdn.net/csz/news/800a/2015/whatsimporta.jpg" alt="mercury" />
       </div>
 
       <div class="planet">
-        <img
-          id="saturn"
-          src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/saturn-artwork-royalty-free-illustration-460715659-1556206684.jpg?crop=1xw:1xh;center,top&resize=980:*"
-          alt="saturn"
-        />
+        <img id="venus"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/PIA23791-Venus-NewlyProcessedView-20200608.jpg/440px-PIA23791-Venus-NewlyProcessedView-20200608.jpg"
+          alt="venus" />
       </div>
 
       <div class="planet">
-        <img
-          id="uranus"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/1280px-Uranus2.jpg"
-          alt="uranus"
-        />
+        <img id="earth"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/1200px-The_Earth_seen_from_Apollo_17.jpg"
+          alt="earth" />
       </div>
 
       <div class="planet">
-        <img
-          id="neptune"
-          src="https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg"
-          alt="neptune"
-        />
+        <img id="mars"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1920px-OSIRIS_Mars_true_color.jpg"
+          alt="mars" />
       </div>
     </span>
-    <hr />
+
     <br />
-    <br />
+    <div class="planet">
+      <img id="jupiter"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/440px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
+        alt="jupiter" />
+    </div>
 
-    <p>
-      <strong>
-        <em>This page was built by</em>
-        <a href="https://www.instagram.com/_andrea.dubuc_/ " target="_blank">
-          <em>Andrea Dubuc</em>
-        </a>
-      </strong>
-    </p>
-  </body>
-  <script>
-    function namePlanet1() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "mercury") {
-        alert(
-          "Right on! 😏\nFun fact: Mercury takes 59 days to make a rotation but only 88 days to circle the Sun. That means that there are fewer than 2 days in a year! 🤯"
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
+    <div class="planet">
+      <img id="saturn"
+        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/saturn-artwork-royalty-free-illustration-460715659-1556206684.jpg?crop=1xw:1xh;center,top&resize=980:*"
+        alt="saturn" />
+    </div>
+
+    <div class="planet">
+      <img id="uranus" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/1280px-Uranus2.jpg"
+        alt="uranus" />
+    </div>
+
+    <div class="planet">
+      <img id="neptune"
+        src="https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg"
+        alt="neptune" />
+    </div>
+  </span>
+  <hr />
+  <br />
+  <br />
+
+  <p>
+    <strong>
+      <em>This page was built by</em>
+      <a href="https://www.instagram.com/_andrea.dubuc_/ " target="_blank">
+        <em>Andrea Dubuc</em>
+      </a>
+    </strong>
+  </p>
+</body>
+<script>
+  var planetName = document.querySelectorAll("img");
+  for (let i = 0; i < planetName.length; i++) {
+    planetName[i].addEventListener("click", function () {
+      namePlanet1(planetName[i].getAttribute('id'))
+    });
+  }
+
+
+  var planets = {
+    mercury: {
+      fact: ' Its hot here '
+    },
+    venus: {
+      fact: 'Venus is the brightest planet in our sky and can sometimes be seen with the naked eye if you know where to look.'
+    },
+    earth: {
+      fact: 'Earth has more exposed water than land. Three quarters of the Earth is covered by water! The earth has one moon. 🌔'
+    },
+    mars: {
+      fact: 'Mars is the home of "Olympus Mons" 🌋, the largest volcano found in the solar system. It stands about 27 kilometers high with a crater 81 kilometers wide.'
+    },
+    jupiter: {
+      fact: `Jupiter is the largest planet in the solar system; it's so big that you could fit all the other planets in the solar system inside it. It also spins very quickly on its axis; therefore, a day on Jupiter lasts only 9 hours and 55 minutes! 😱`
+    },
+    saturn: {
+      fact: `The rings that surrounds Saturn could be the remnants of a moon that was shattered by Saturn's gravity. Saturn's rings are as wide as 22 planet earths all in a row but are only 30 feet thick! 🪐`
+    },
+    uranus: {
+      fact: `Neptune was discovered in 1846. In 2011 it finally made it's first lap around the sun since we discovered it because one Neptune year lasts 165 Earth years! `
+    },
+  }
+
+  function namePlanet1(correctAns) {
+    var planet = prompt("What planet is this?");
+    planet = planet.toLowerCase().trim();
+    if (planet === correctAns) {
+      alert(`Right on! 😏\n Fun fact: ${planets.planet.fact}`);
+    } else {
+      alert("Nope. Try again!");
     }
+  }
 
-    let planetName1 = document.getElementById("mercury");
-    planetName1.addEventListener("click", namePlanet1);
+  // This is the typewriter function I found on w3schools.com
+  var i = 0;
+  var txt =
+    "Can you name all the planets in our solar system? Click on a planet, then input its name!"; /* The text */
+  var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-    function namePlanet2() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "venus") {
-        alert(
-          "Right on! 😏\nFun fact: Venus is the brightest planet in our sky and can sometimes be seen with the naked eye if you know where to look. "
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
     }
+  }
+  window.onload = typeWriter;
+</script>
 
-    let planetName2 = document.getElementById("venus");
-    planetName2.addEventListener("click", namePlanet2);
-
-    function namePlanet3() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "earth") {
-        alert(
-          "Right on! 😏\nFun fact: Earth has more exposed water than land. Three quarters of the Earth is covered by water! The earth has one moon. 🌔"
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
-    }
-
-    let planetName3 = document.getElementById("earth");
-    planetName3.addEventListener("click", namePlanet3);
-
-    function namePlanet4() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "mars") {
-        alert(
-          'Right on! 😏\nFun fact: Mars is the home of "Olympus Mons" 🌋, the largest volcano found in the solar system. It stands about 27 kilometers high with a crater 81 kilometers wide.'
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
-    }
-
-    let planetName4 = document.getElementById("mars");
-    planetName4.addEventListener("click", namePlanet4);
-
-    function namePlanet5() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "jupiter") {
-        alert(
-          "Right on! 😏\nFun fact: Jupiter is the largest planet in the solar system; it's so big that you could fit all the other planets in the solar system inside it. It also spins very quickly on its axis; therefore, a day on Jupiter lasts only 9 hours and 55 minutes! 😱"
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
-    }
-
-    let planetName5 = document.getElementById("jupiter");
-    planetName5.addEventListener("click", namePlanet5);
-
-    function namePlanet6() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "saturn") {
-        alert(
-          "Right on! 😏\nFun fact: The rings that surrounds Saturn could be the remnants of a moon that was shattered by Saturn's gravity. Saturn's rings are as wide as 22 planet earths all in a row but are only 30 feet thick! 🪐"
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
-    }
-
-    let planetName6 = document.getElementById("saturn");
-    planetName6.addEventListener("click", namePlanet6);
-
-    function namePlanet7() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "uranus") {
-        alert(
-          "Right on! 😏\nFun fact: Uranus’axis is at a 97 degree angle, meaning that it orbits lying on its side!"
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
-    }
-
-    let planetName7 = document.getElementById("uranus");
-    planetName7.addEventListener("click", namePlanet7);
-
-    function namePlanet8() {
-      let planet = prompt("What planet is this?");
-      planet = planet.toLowerCase().trim();
-      if (planet === "neptune") {
-        alert(
-          "Right on! 😏\nFun fact: Neptune was discovered in 1846. In 2011 it finally made it's first lap around the sun since we discovered it because one Neptune year lasts 165 Earth years!"
-        );
-      } else {
-        alert("Nope. Try again!");
-      }
-    }
-
-    let planetName8 = document.getElementById("neptune");
-    planetName8.addEventListener("click", namePlanet8);
-
-    // This is the typewriter function I found on w3schools.com
-    var i = 0;
-    var txt =
-      "Can you name all the planets in our solar system? Click on a planet, then input its name!"; /* The text */
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-    window.onload = typeWriter;
-  </script>
 </html>

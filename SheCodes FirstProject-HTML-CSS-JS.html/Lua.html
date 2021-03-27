@@ -144,35 +144,46 @@
   }
 
 
-  var planets = {
-    mercury: {
-      fact: ' Its hot here '
+  var planets = [{
+      name: 'mercury',
+      fact: ' Mercury takes 59 days to make a rotation but only 88 days to circle the Sun. That means that there are fewer than 2 days in a year! 🤯'
     },
-    venus: {
+    {
+      name: 'venus',
       fact: 'Venus is the brightest planet in our sky and can sometimes be seen with the naked eye if you know where to look.'
     },
-    earth: {
+    {
+      name: 'earth',
       fact: 'Earth has more exposed water than land. Three quarters of the Earth is covered by water! The earth has one moon. 🌔'
     },
-    mars: {
+    {
+      name: 'mars',
       fact: 'Mars is the home of "Olympus Mons" 🌋, the largest volcano found in the solar system. It stands about 27 kilometers high with a crater 81 kilometers wide.'
     },
-    jupiter: {
+    {
+      name: 'jupiter',
       fact: `Jupiter is the largest planet in the solar system; it's so big that you could fit all the other planets in the solar system inside it. It also spins very quickly on its axis; therefore, a day on Jupiter lasts only 9 hours and 55 minutes! 😱`
     },
-    saturn: {
+    {
+      name: 'saturn',
       fact: `The rings that surrounds Saturn could be the remnants of a moon that was shattered by Saturn's gravity. Saturn's rings are as wide as 22 planet earths all in a row but are only 30 feet thick! 🪐`
     },
-    uranus: {
-      fact: `Neptune was discovered in 1846. In 2011 it finally made it's first lap around the sun since we discovered it because one Neptune year lasts 165 Earth years! `
+    {
+      name: 'uranus',
+      fact: `Uranus’axis is at a 97 degree angle, meaning that it orbits lying on its side!`
     },
-  }
+    {
+      name: 'neptune',
+      fact: `Neptune was discovered in 1846. In 2011 it finally made it's first lap around the sun since we discovered it because one Neptune year lasts 165 Earth years!`
+    }
+  ]
 
   function namePlanet1(correctAns) {
     var planet = prompt("What planet is this?");
     planet = planet.toLowerCase().trim();
     if (planet === correctAns) {
-      alert(`Right on! 😏\n Fun fact: ${planets.planet.fact}`);
+      let x = planets.filter(planet => planet.name === correctAns);
+      alert(`Right on! 😏\n Fun fact: ${x[0].fact}`);
     } else {
       alert("Nope. Try again!");
     }
